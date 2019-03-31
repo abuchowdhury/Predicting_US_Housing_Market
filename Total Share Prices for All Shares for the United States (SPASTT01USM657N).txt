@@ -1,0 +1,10 @@
+median = STOCK_MKT_M.loc[STOCK_MKT_M['STOCK_MKT_A_PCT_CHG'] < 1, 'STOCK_MKT_A_PCT_CHG'].median()
+STOCK_MKT_M.loc[STOCK_MKT_M.STOCK_MKT_A_PCT_CHG > 1, 'STOCK_MKT_A_PCT_CHG'] = np.nan
+STOCK_MKT_M.fillna(median,inplace=True)
+
+median = STOCK_MKT_M.loc[STOCK_MKT_M['STOCK_MKT_A_PCT_CHG'] > 1, 'STOCK_MKT_A_PCT_CHG'].median()
+STOCK_MKT_M.loc[STOCK_MKT_M.STOCK_MKT_A_PCT_CHG > 1, 'STOCK_MKT_A_PCT_CHG'] = np.nan
+STOCK_MKT_M.fillna(median,inplace=True)
+
+
+ Total Share Prices for All Shares for the United States (SPASTT01USM657N)

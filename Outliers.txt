@@ -1,0 +1,78 @@
+#SPASTT01USM657N
+
+SHARE_M = pd.read_csv('C:/scripts/capstone2/SPASTT01USM657N.csv', index_col=0)
+
+SHARE_M.index = pd.to_datetime(SHARE_M.index)
+SHARE_M = SHARE_M.reindex(pd.date_range(start='19620101', end='20181201', freq='1MS'))
+SHARE_M.head(20)
+
+
+SHARE_M = SHARE_M.interpolate(method='linear')
+SHARE_M.head(20)
+
+SHARE_M.tail(36)
+
+SHARE_M['SHARE_M_PCT_CHG']= SHARE_M['SHARE_M'].pct_change()
+SHARE_M.head(30)
+
+#prices_perc = aapl.rolling(7).apply(percent_change)
+SHARE_M['SHARE_Q_PCT_CHG']= SHARE_M['SHARE_M'].pct_change(periods = 2)
+SHARE_M['SHARE_A_PCT_CHG']= SHARE_M['SHARE_M'].pct_change(periods = 11)
+SHARE_M['SHARE_2A_PCT_CHG']= SHARE_M['SHARE_M'].pct_change(periods = 23)
+SHARE_M['SHARE_3A_PCT_CHG']= SHARE_M['SHARE_M'].pct_change(periods = 35)
+
+SHARE_M = SHARE_M.fillna(method='bfill')
+
+# Print out the number of missing values
+print(SHARE_M.isnull().sum())
+SHARE_M.info()
+
+SHARE_M(['1-1-2004':'1-1-2007'], ['SHARE_A_PCT_CHG':'SHARE_3A_PCT_CHG'])
+SHARE_M['1-1-2007':'1-1-2010']
+
+SHARE_JUMP= SHARE_M[SHARE_M['SHARE_3A_PCT_CHG'] > .35]
+print(SHARE_JUMP.tail(50))
+SHARE_JUMP[['SHARE_2A_PCT_CHG', 'SHARE_3A_PCT_CHG']].plot()
+
+SHARE_JUMP[['SHARE_A_PCT_CHG','SHARE_2A_PCT_CHG', 'SHARE_3A_PCT_CHG']].plot()
+
+SHARE_M.to_csv('C:/scripts/capstone2/SHARE_M2.csv')
+SHARE_M.to_csv('C:/scripts/capstone2/SHARE_M.csv')
+
+SHARE_M['SHARE_A_PCT_CHG'].plot(title="US Housing Supply RATIO Percent Change in 12 Months ",legend=True)
+
+
+SHARE_M['SHARE_2A_PCT_CHG'].plot(title="US Housing Supply RATIO in 24 Months ",legend=True)
+
+#Good
+SHARE_M['SHARE_3A_PCT_CHG'].plot(title="US Housing Supply RATIO Percent Change in 36 Months ",legend=True)
+
+#Very Good
+SHARE_M['SHARE_M'].plot(title="US Housing Supply RATIO Percent Change in 24 Months ",legend=True)
+plt.xlabel('Date')
+plt.xticks(rotation=60)
+
+plt.ylabel('Percent Changes')
+plt.title('US Housing Supply RATIO in 12, 24 & 36 Months')
+plt.show()
+
+
+
+median = SHARE_M.loc[SHARE_M['SHARE_M_2A_PCT_CHG'] > -1, 'SHARE_M_2A_PCT_CHG'].median()
+SHARE_M.loc[SHARE_M.SHARE_M_2A_PCT_CHG < -1, 'SHARE_M_2A_PCT_CHG'] = np.nan
+
+
+median = SHARE_M.loc[SHARE_M['SHARE_M_2A_PCT_CHG'] < 1, 'SHARE_M_2A_PCT_CHG'].median()
+SHARE_M.loc[SHARE_M.SHARE_M_2A_PCT_CHG > 1, 'SHARE_M_2A_PCT_CHG'] = np.nan
+
+
+SHARE_M = SHARE_M.interpolate(method='linear')
+SHARE_M = SHARE_M.fillna(method='bfill')
+SHARE_M.fillna(median,inplace=True)
+SHARE_M.head(20)
+
+GRU (LSTM)
+
+WEbnet SPOTLITE Maciej Kula PyTorch
+
+CNN

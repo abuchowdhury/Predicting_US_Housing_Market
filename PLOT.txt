@@ -1,0 +1,52 @@
+#####################
+
+ASPUS['ASPUS_3A_PCT_CHG'].plot(title="US AVE HOUSE PURCHASE PRICE Percent Change in 36 Months ",legend=True)
+
+STOCK_MKT_M['STOCK_MKT_A_PCT_CHG'].plot(title="US STOCK MARKET Percent Change in 12 Months ",legend=True)
+
+BAA_YEILD_10Y_M['BAA_YEILD_10Y_2A_PCT_CHG'].plot(title="BAA Bond 10Y yealds Percent Change in 24 Months ",legend=True)
+
+US10Y_M['US10Y_3A_PCT_CHG'].plot(title="US 10 Year Treasury Percent Change in 36 Months ",legend=True)
+
+#########################
+
+ASPUS['ASPUS_3A_PCT_CHG'].plot(title="US AVE HOUSE PURCHASE PRICE Percent Change in 36 Months ",legend=True)
+
+RPCE_M['RPCE_A_PCT_CHG'].plot(title="US Real People Consumer Expenditure Price Percent Change in 12 Months ",legend=True)
+
+UEMP_M['UEMP_3A_PCT_CHG'].plot(title="US Long Run Unemployment Percent Change in 36 Months ",legend=True)
+
+RGDP_M['GDP_M'].plot(title="US GDP Percent Change in 24 Months ",legend=True)
+plt.xlabel('Date')
+
+#########################
+
+ASPUS['ASPUS_3A_PCT_CHG'].plot(title="US AVE HOUSE PURCHASE PRICE Percent Change in 36 Months ",legend=True)
+
+H_SUPPLY_M['H_RATIO_3A_PCT_CHG'].plot(title="US Housing Supply RATIO Percent Change in 36 Months ",legend=True)
+
+HSN1F_M['HSN1F_3A_PCT_CHG'].plot(title="US New 1F Housing Supply Percent Change in 36 Months ",legend=True)
+
+PERMIT_M['PERMIT_3A_PCT_CHG'].plot(title="US Construction PERMIT Percent Change in 36 Months ",legend=True)
+
+#########################################
+
+ASPUS['ASPUS_3A_PCT_CHG']
+
+H_SUPPLY_M['H_RATIO_3A_PCT_CHG']
+
+HSN1F_M['HSN1F_3A_PCT_CHG']
+
+PERMIT_M['PERMIT_3A_PCT_CHG']
+
+
+STOCK_MKT_M['STOCK_MKT_3A_PCT_CHG']
+BAA_YEILD_10Y_M['BAA_YEILD_10Y_2A_PCT_CHG']
+US10Y_M['US10Y_3A_PCT_CHG']
+
+
+RPCE_M['RPCE_A_PCT_CHG']
+
+UEMP_M['UEMP_3A_PCT_CHG']
+
+RGDP_M['RGDP_M_PCT_CHG']

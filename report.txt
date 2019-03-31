@@ -1,0 +1,25 @@
+Data Cleaning & Removing outliers for monthly unemployment data
+
+During Housing market crash, average housing price drops 10% or more in 12 months
+
+This graph clearly indicate that during housing market crash (1981, 1992 & 2007) Personal Consumer Expenditures drops rapidly
+
+We can see positive growth in bond market during housing market crash (1981 & 2007)
+
+We can see that strong unemployment growth 1981 & 2007 or US Unemployment Growth is over 10% during housing market crash
+
+We can see that GDP growth is negative during 1981 & 2007 or GDP Growth is below -5% during housing market crash
+
+Higher interest rate is one of the major factor for housing market crash
+
+Normally stock market goes down sharply along with housing market
+
+These abobe graphs clearly indicates that housing supply ratio jump quickly right before the housing market crash. In another words, rapid housing supply growth eventually brings the housing market down.
+
+
+During the Housing market (1981, 1992 & 2007), Number of new 1F house sold in US sharply goes down.
+
+During the Housing market crashes(1981, 1992 & 2007), Number of US Construction PERMIT in US sharply goes down.
+
+###############
+

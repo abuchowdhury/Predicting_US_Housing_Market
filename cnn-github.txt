@@ -1,0 +1,12 @@
+https://github.com/SnehJain/Deep-Neural-Networks-For-Stock-Price-Prediction
+
+conda create -n tensorflow anaconda python=3.6
+activate tensorflow
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.2.0-cp36-cp36m-win_amd64.whl
+spyder
+
+tensorflow-1.0.1-cp36-cp36m-win_amd64.whl
+
+https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.12.0-cp36-cp36m-win_amd64.whl
+
+tensorflow-1.0.1-cp36-cp36m-win_amd64.whl

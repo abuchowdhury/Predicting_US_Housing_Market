@@ -1,0 +1,22 @@
+https://github.com/SnehJain/Deep-Neural-Networks-For-Stock-Price-Prediction
+
+conda create -n tensorflow anaconda python=3.6
+activate tensorflow
+conda install tensorflow=1.8
+spyder
+
+tensorflow-1.0.1-cp36-cp36m-win_amd64.whl
+
+https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.12.0-cp36-cp36m-win_amd64.whl
+
+tensorflow-1.0.1-cp36-cp36m-win_amd64.whl
+
+conda create --name=numpy2
+conda activate numpy2
+conda install -c conda-forge mpmath numpy matplotlib
+conda install pyqt
+
+import tensorflow as tf
+node1 = tf.constant(3.0, tf.float32)
+node2 = tf.constant(4.0) # also tf.float32 implicitly
+print(node1, node2)
